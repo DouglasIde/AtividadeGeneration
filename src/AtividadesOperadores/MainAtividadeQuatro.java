@@ -1,4 +1,4 @@
-package atividadeQuatro;
+package AtividadesOperadores;
 
 import java.util.Scanner;
 import java.util.Locale;
