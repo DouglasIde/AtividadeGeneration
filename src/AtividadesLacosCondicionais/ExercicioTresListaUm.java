@@ -25,14 +25,14 @@ public class ExercicioTresListaUm {
 		System.out.println("É a sua primeira doação? (True/False)");
 		primeiraDoacao = leitura.nextBoolean();
 		
-		if(primeiraDoacao == true && idade >= 60 && idade <= 69) { // JOÃO SILVA
+		if(primeiraDoacao == true && idade >= 60 && idade <= 69) { 
 			System.out.printf("%s NÃO está apto(a) para doar sangue!", nomeDoador);
-		} else if(primeiraDoacao == false && idade >= 60 && idade <= 69) { // PEDRO SOUZA
+		} else if(primeiraDoacao == false && idade >= 60 && idade <= 69) { 
 			System.out.printf("%s está apto(a) para doar sangue!", nomeDoador);
-		} else if(primeiraDoacao == true && idade >= 18 && idade <= 69) { // MARIA ANJOS
+		} else if(primeiraDoacao == true && idade >= 18 && idade <= 69) { 
 			System.out.printf("%s está apto(a) para doar sangue!", nomeDoador);
 		} else { 
-			System.out.printf("%s NÃO está apto(a) para doar sangue", nomeDoador); // FABIO CAMÕES
+			System.out.printf("%s NÃO está apto(a) para doar sangue", nomeDoador); 
 		}
 
 		
