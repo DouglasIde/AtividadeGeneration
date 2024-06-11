@@ -10,5 +10,16 @@ public class ExercícioQuatroListaUmEx04 {
 		 * Cada palavra definem as características de um tipo de animal
 		 * 
 		 * */
+		
+		Scanner leitura = new Scanner(System.in);
+		
+		String vertebrado = "vertebrado", tipoAnimal;
+		
+		System.out.println("Digite um tipo de Animal (Ex: Vertebrado ou Invertebrado): ");
+		tipoAnimal = leitura.nextLine();
+		
+		if(tipoAnimal.equalsIgnoreCase(vertebrado)) {
+			
+		}
 	}
 }

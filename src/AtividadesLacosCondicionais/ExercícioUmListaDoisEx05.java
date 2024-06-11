@@ -10,15 +10,19 @@ public class ExercícioUmListaDoisEx05 {
 		int quantidade, opcao;
 		float preco, valorTotal;
 	
-		System.out.println("***** LANCHONETE DO CORINTHIANS *****");
-		System.out.println("1 - Cachorro Quente - R$ 10,00");
-		System.out.println("2 - X-Salada - R$ 15,00");
-		System.out.println("3 - X-Bacon - R$ 18,00");
-		System.out.println("4 - Bauru - R$ 12,00");
-		System.out.println("5 - Refrigerante - R$ 8,00");
-		System.out.println("6 - Suco de Laranja - R$ 13,00");
-		System.out.println("*************************************");
-		
+		System.out.println("""
+				*********************************
+				***** LANCHONETE DO DOUGLAS *****
+				*********************************
+				1 - Cachorro Quente - R$ 10,00
+				2 - X-Salada - R$ 15,00
+				3 - X-Bacon - R$ 18,00
+				4 - Bauru - R$ 12,00
+				5 - Refrigerante - R$ 8,00
+				6 - Suco de Laranja - R$ 13,00
+				*********************************
+				""");
+
 		System.out.println("Digite qual opção deseja comprar: ");
 		opcao = leitura.nextInt();
 		
