@@ -16,6 +16,7 @@ public class ExercicioQuatroListaDoisEx08 {
 		 * 
 		 * */
 		
-		
+		float valorInicial;
+		int opcao;
 	}
 }
