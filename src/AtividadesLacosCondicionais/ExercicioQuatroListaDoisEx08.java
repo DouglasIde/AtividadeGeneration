@@ -19,11 +19,10 @@ public class ExercicioQuatroListaDoisEx08 {
 		
 		Scanner leitura = new Scanner(System.in);
 		Locale locale = new Locale("en","US"); // Não está funcionando
-		
-		float valorInicial = 1000.0f; 
-		float valorAtribuido = 0; 
-		float saldo = valorInicial + valorAtribuido;
+		 
+		float saldo = 1000.0f;
 		float saque;
+		float depositar; 
 		int opcao;
 		
 		System.out.println("""
@@ -39,21 +38,26 @@ public class ExercicioQuatroListaDoisEx08 {
 		switch(opcao) {
 		case 1:
 			System.out.println("***** SALDO *****");
-			System.out.println("O seu saldo é de: " + saldo);
+			System.out.println("O seu saldo é de: R$" + saldo);
 			break;
 		case 2:
 			System.out.println("***** SAQUE *****");
-			System.out.println("Qual a quantidade que deseja sacar?: ");
+			System.out.println("Qual a quantidade que deseja Sacar?: ");
 			saque = leitura.nextFloat();
 			if(saque > saldo) {
 				System.out.println("Saldo Insuficiente!");
 			} else {
-				saldo = valorInicial + saque; 
-				System.out.println("Novo Saldo: " + saldo);
+				saldo = saldo - saque; 
+				System.out.println("Novo Saldo: R$" + saldo);
 			}
 			break;
 		case 3:
 			System.out.println("***** DEPÓSITO *****");
+			System.out.println("Qual a quantidade que deseja Depositar?: ");
+			depositar = leitura.nextFloat();
+			saldo = saldo + depositar;
+			System.out.println("Novo Saldo: R$" + saldo);
+			break;
 			default:
 				System.out.println("Operação Inválida");
 		}
