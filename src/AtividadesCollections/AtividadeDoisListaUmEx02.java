@@ -1,5 +1,6 @@
 package AtividadesCollections;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class AtividadeDoisListaUmEx02 {
@@ -16,10 +17,13 @@ public class AtividadeDoisListaUmEx02 {
 		
 		Scanner leitura = new Scanner(System.in);
 		
+		int numeroDigitado;
+		
 		ArrayList<Integer> numeros = new ArrayList<Integer>();
 		
 		for(int i = 0; i < 10; i++) {
-			System.out.println("");
+			System.out.println("Digite um número: ");
+			
 		}
 	}
 }
