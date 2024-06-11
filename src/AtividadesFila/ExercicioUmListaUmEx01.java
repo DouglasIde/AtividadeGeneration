@@ -54,6 +54,7 @@ public class ExercicioUmListaUmEx01 {
 				System.out.println("Fila dos Clientes Atualizada: ");
 				fila.remove();
 				System.out.println(fila);
+				// Thread.sleep(2000);
 				break;
 			case 0:
 				System.out.println("Programa Finalizado! Até mais :)");
