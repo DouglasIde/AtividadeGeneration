@@ -2,7 +2,7 @@ package AtividadesLacosCondicionais;
 
 import java.util.Scanner;
 
-public class ExercicioTresListaUm {
+public class ExercicioTresListaUmEx03 {
 	public static void main(String[] args) {
 		
 		/* 

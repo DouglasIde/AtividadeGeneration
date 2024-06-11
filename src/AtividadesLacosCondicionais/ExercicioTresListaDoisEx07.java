@@ -2,7 +2,7 @@ package AtividadesLacosCondicionais;
 
 import java.util.Scanner;
 
-public class ExercicioTresListaDois {
+public class ExercicioTresListaDoisEx07 {
 	public static void main(String[] args) {
 		
 		Scanner leitura = new Scanner(System.in);

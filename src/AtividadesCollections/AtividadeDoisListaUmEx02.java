@@ -17,7 +17,7 @@ public class AtividadeDoisListaUmEx02 {
 		
 		Scanner leitura = new Scanner(System.in);
 		
-		int numeroDigitado;
+		int numeroDigitado = 0;
 		
 		ArrayList<Integer> numeros = new ArrayList<Integer>();
 		
@@ -27,6 +27,10 @@ public class AtividadeDoisListaUmEx02 {
 			numeros.add(numeroDigitado);
 		}
 		
-		System.out.println(numeros);
+		if(numeros.contains(numeroDigitado)) {
+			System.out.println("O número: " + numeroDigitado + " está localizado em " + numeros.indexOf(numeroDigitado));
+		} else {
+			System.out.println("O número: " + numeroDigitado + " não foi encontrado!");
+		}
 	}
 }
