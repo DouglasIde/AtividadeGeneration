@@ -1,5 +1,7 @@
 package AtividadesCollections;
 
+import java.util.Scanner;
+
 public class AtividadeDoisListaUmEx02 {
 	public static void main(String[] args) {
 		
@@ -11,5 +13,13 @@ public class AtividadeDoisListaUmEx02 {
 		 * Caso o número NÃO seja encontrado, exiba na tela: "O número NN não foi encontrado!"
 		 * 
 		 * */
+		
+		Scanner leitura = new Scanner(System.in);
+		
+		ArrayList<Integer> numeros = new ArrayList<Integer>();
+		
+		for(int i = 0; i < 10; i++) {
+			System.out.println("");
+		}
 	}
 }
