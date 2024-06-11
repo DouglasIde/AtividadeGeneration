@@ -23,6 +23,7 @@ public class ExercicioDoisListaDoisEx02 {
 		Stack<String> pilha = new Stack<String>();
 		
 		int opcao;
+		String nomeLivro;
 		
 		while(true) {
 			
@@ -36,6 +37,33 @@ public class ExercicioDoisListaDoisEx02 {
 					Entre com a opção desejado:
 					""");
 			opcao = leitura.nextInt();
+			
+			switch(opcao) {
+			case 1:
+				leitura.nextLine();
+				System.out.println("Digite o nome do Livro para adicionar a pilha: ");
+				pilha.push(leitura.nextLine());
+				System.out.println("O Livro foi Adicionado!");
+				break;
+			case 2:
+				if(pilha.isEmpty()) {
+					System.out.println("A Pilha está vazia!\n");
+				} else {
+					System.out.println("Pilha: ");
+					pilha.peek();
+					System.out.println(pilha);
+				}
+				break;
+			case 3:
+				pilha.pop();
+				System.out.println("O Livro foi retirado da pilha!");
+				break;
+			case 0:
+				System.out.println("Programa Finalizado! Até mais :)");
+				return;
+				default:
+					System.out.println("Chave Incorreta, Por favor insira uma chave válida do Menu!");
+			}
 		}
 	}
 }

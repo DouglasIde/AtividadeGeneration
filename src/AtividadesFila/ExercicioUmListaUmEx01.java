@@ -5,7 +5,7 @@ import java.util.Queue;
 import java.util.Scanner;
 
 public class ExercicioUmListaUmEx01 {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 
 		/*
 		 * Crie um programa contendo uma Collection Queue (Fila) de Objetos da Classe String
@@ -54,7 +54,7 @@ public class ExercicioUmListaUmEx01 {
 				System.out.println("Fila dos Clientes Atualizada: ");
 				fila.remove();
 				System.out.println(fila);
-				// Thread.sleep(2000);
+				Thread.sleep(2000); // É dessa forma que adiciona o Delay
 				break;
 			case 0:
 				System.out.println("Programa Finalizado! Até mais :)");
