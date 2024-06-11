@@ -1,5 +1,6 @@
 package AtividadesLacosCondicionais;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class ExercicioQuatroListaDoisEx08 {
@@ -16,7 +17,19 @@ public class ExercicioQuatroListaDoisEx08 {
 		 * 
 		 * */
 		
+		Scanner leitura = new Scanner(System.in);
+		Locale locale = new Locale("en","US");
+		
 		float valorInicial;
 		int opcao;
+		
+		System.out.println("""
+				Digite qual Operação você deseja realizar:
+				
+				1 - Saldo
+				2 - Saque
+				3 - Depósito
+				""");
+		
 	}
 }
