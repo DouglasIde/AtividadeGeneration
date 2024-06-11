@@ -14,6 +14,7 @@ public class ExercicioUmListaUmEx01 {
 		 * 2 - Listar todos os Clientes
 		 * 3 - Chamar uma pessoa da fila
 		 * 0 - Programa deve ser finalizado
+		 * 
 		 * */
 
 		Scanner leitura = new Scanner(System.in);
@@ -42,7 +43,7 @@ public class ExercicioUmListaUmEx01 {
 				break;
 			case 2:
 				if(fila.isEmpty()) {
-					System.out.println("A Fila está vazia!");
+					System.out.println("A Fila está vazia!\n");
 				} else {
 					System.out.println("Fila dos Clientes: ");
 					fila.peek();
