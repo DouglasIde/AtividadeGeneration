@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.Scanner;
 import java.util.Set;
 
-public class AtividadeUmListaDoisEx3 {
+public class AtividadeUmListaDoisEx03 {
 	public static void main(String[] args) {
 		
 		/*
