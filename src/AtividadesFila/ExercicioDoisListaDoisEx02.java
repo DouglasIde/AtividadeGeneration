@@ -1,6 +1,7 @@
 package AtividadesFila;
 
 import java.util.Scanner;
+import java.util.Stack;
 
 public class ExercicioDoisListaDoisEx02 {
 	public static void main(String[] args) {
@@ -16,5 +17,25 @@ public class ExercicioDoisListaDoisEx02 {
 		 * Caso a pilha esteja vazia, ele deverá informar que a pilha está vazia
 		 * 
 		 * */
+		
+		Scanner leitura = new Scanner(System.in);
+		
+		Stack<String> pilha = new Stack<String>();
+		
+		int opcao;
+		
+		while(true) {
+			
+			System.out.println("""
+					*********************************
+					1 - Adicionar Livro na Pilha
+					2 - Listar todos os Livros
+					3 - Retirar Cliente da Pilha
+					0 - Sair
+					*********************************
+					Entre com a opção desejado:
+					""");
+			opcao = leitura.nextInt();
+		}
 	}
 }
