@@ -31,5 +31,7 @@ public class ExercicioQuatroListaDoisEx08 {
 				3 - Depósito
 				""");
 		
+		opcao = leitura.nextInt();
+		
 	}
 }
