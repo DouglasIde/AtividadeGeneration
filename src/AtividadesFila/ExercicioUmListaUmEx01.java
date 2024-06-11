@@ -19,9 +19,9 @@ public class ExercicioUmListaUmEx01 {
 		Scanner leitura = new Scanner(System.in);
 
 		Queue<String> fila = new LinkedList<String>();
-		
+
 		int opcao;
-		
+
 		while(true) {
 			System.out.println("""
 					*********************************
@@ -41,9 +41,13 @@ public class ExercicioUmListaUmEx01 {
 				System.out.println("O Cliente foi Adicionado!");
 				break;
 			case 2:
-				System.out.println("Fila dos Clientes: ");
-				fila.peek();
-				System.out.println(fila);
+				if(fila.isEmpty()) {
+					System.out.println("A Fila está vazia!");
+				} else {
+					System.out.println("Fila dos Clientes: ");
+					fila.peek();
+					System.out.println(fila);
+				}
 				break;
 			case 3:
 				System.out.println("Fila dos Clientes Atualizada: ");
@@ -53,9 +57,9 @@ public class ExercicioUmListaUmEx01 {
 			case 0:
 				System.out.println("Programa Finalizado! Até mais :)");
 				return;
-				default:
-					System.out.println("Chave Incorreta, Por favor insira uma chave válida do Menu!");
-					return;
+			default:
+				System.out.println("Chave Incorreta, Por favor insira uma chave válida do Menu!");
+				return;
 			}
 		}
 
