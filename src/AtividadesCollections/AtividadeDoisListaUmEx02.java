@@ -23,7 +23,10 @@ public class AtividadeDoisListaUmEx02 {
 		
 		for(int i = 0; i < 10; i++) {
 			System.out.println("Digite um número: ");
-			
+			numeroDigitado = leitura.nextInt();
+			numeros.add(numeroDigitado);
 		}
+		
+		System.out.println(numeros);
 	}
 }
