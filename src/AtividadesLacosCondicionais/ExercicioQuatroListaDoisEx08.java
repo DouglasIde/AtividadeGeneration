@@ -20,7 +20,9 @@ public class ExercicioQuatroListaDoisEx08 {
 		Scanner leitura = new Scanner(System.in);
 		Locale locale = new Locale("en","US");
 		
-		float valorInicial;
+		float valorInicial = 1000.0f; 
+		float valorAtribuido = 0;
+		float saldo = valorInicial + valorAtribuido;
 		int opcao;
 		
 		System.out.println("""
@@ -32,6 +34,19 @@ public class ExercicioQuatroListaDoisEx08 {
 				""");
 		
 		opcao = leitura.nextInt();
+		
+		switch(opcao) {
+		case 1:
+			System.out.println("***** SALDO *****");
+			System.out.println("O seu saldo é de: " + saldo);
+			return;
+		case 2:
+			System.out.println("***** SAQUE *****");
+		case 3:
+			System.out.println("***** DEPÓSITO *****");
+			default:
+				System.out.println("Operação Inválida");
+		}
 		
 	}
 }
