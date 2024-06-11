@@ -17,15 +17,18 @@ public class ExercicioTresListaDoisEx07 {
 		System.out.println("Digite outro número para realizar um Cálculo: ");
 		numero2 = leitura.nextFloat();
 		
-		System.out.println("*******************************");
-		System.out.println("***** CALCULADORA *****");
-		System.out.println("*******************************");
-		System.out.println("Escolha o que deseja fazer: ");
-		System.out.println("1 - Soma");
-		System.out.println("2 - Substração");
-		System.out.println("3 - Multiplicação");
-		System.out.println("4 - Divisão");
-		System.out.println("*******************************");
+		System.out.println("""
+				*******************************
+				********* CALCULADORA *********
+				*******************************
+				Escolha o que deseja fazer:  
+					1 - Soma				  
+					2 - Substração            
+					3 - Multiplicação         
+					4 - Divisão               
+				*******************************
+				""");
+
 		opcao = leitura.nextInt();
 		
 		switch(opcao) {
