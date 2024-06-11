@@ -18,11 +18,12 @@ public class ExercicioQuatroListaDoisEx08 {
 		 * */
 		
 		Scanner leitura = new Scanner(System.in);
-		Locale locale = new Locale("en","US");
+		Locale locale = new Locale("en","US"); // Não está funcionando
 		
 		float valorInicial = 1000.0f; 
-		float valorAtribuido = 0;
+		float valorAtribuido = 0; 
 		float saldo = valorInicial + valorAtribuido;
+		float saque;
 		int opcao;
 		
 		System.out.println("""
@@ -39,9 +40,18 @@ public class ExercicioQuatroListaDoisEx08 {
 		case 1:
 			System.out.println("***** SALDO *****");
 			System.out.println("O seu saldo é de: " + saldo);
-			return;
+			break;
 		case 2:
 			System.out.println("***** SAQUE *****");
+			System.out.println("Qual a quantidade que deseja sacar?: ");
+			saque = leitura.nextFloat();
+			if(saque > saldo) {
+				System.out.println("Saldo Insuficiente!");
+			} else {
+				saldo = valorInicial + saque; 
+				System.out.println("Novo Saldo: " + saldo);
+			}
+			break;
 		case 3:
 			System.out.println("***** DEPÓSITO *****");
 			default:
