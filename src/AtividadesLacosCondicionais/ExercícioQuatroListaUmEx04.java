@@ -46,12 +46,20 @@ public class ExercícioQuatroListaUmEx04 {
 			System.out.println("Ele(a) é um Inseto ou Anelideo? : ");
 			insetoOuAnelideo = leitura.nextLine();
 			if(insetoOuAnelideo.equalsIgnoreCase("inseto")) {
-				System.out.println("Ele é Hematofago ou Herbivoro? ");
+				System.out.println("Ele(a) é Hematofago ou Herbivoro? ");
 				hematofagoOuHerbivoro = leitura.nextLine();
 				if(hematofagoOuHerbivoro.equals("hematofago")) {
 					System.out.println("O seu animal é uma PULGA");
 				} else if(hematofagoOuHerbivoro.equalsIgnoreCase("herbivoro")) {
 					System.out.println("O seu animal é uma LAGARTA");
+				}
+			} else if(insetoOuAnelideo.equalsIgnoreCase("anelideo")) {
+				System.out.println("Ele(a) é um Hematofago ou Onivoro?");
+				hematofagoOuOnivoro = leitura.nextLine();
+				if(hematofagoOuOnivoro.equalsIgnoreCase("Hematofago")) {
+					System.out.println("O seu animal é um SANGUESSUGA");
+				} else if(hematofagoOuOnivoro.equalsIgnoreCase("onivoro")){
+					System.out.println("O seu animal é uma MINHOCA");
 				}
 			}
 		}
