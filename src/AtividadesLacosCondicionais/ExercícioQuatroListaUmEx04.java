@@ -13,13 +13,24 @@ public class ExercícioQuatroListaUmEx04 {
 		
 		Scanner leitura = new Scanner(System.in);
 		
-		String vertebrado = "vertebrado", tipoAnimal;
+		String vertebrado = "vertebrado",invertebrado = "invertebrado";
+		String tipoAnimal, aveOuMamifero, aveCarnivoroOuOnivoro;
 		
 		System.out.println("Digite um tipo de Animal (Ex: Vertebrado ou Invertebrado): ");
 		tipoAnimal = leitura.nextLine();
 		
 		if(tipoAnimal.equalsIgnoreCase(vertebrado)) {
-			
+			System.out.println("Ele(a) é um Mamífero ou uma Ave? : ");
+			aveOuMamifero = leitura.nextLine();
+			if(aveOuMamifero.equalsIgnoreCase("ave")) {
+				System.out.println("Ele(a) é Carnívoro ou Onívoro");
+				aveCarnivoroOuOnivoro = leitura.nextLine();
+					if(aveCarnivoroOuOnivoro.equalsIgnoreCase("carnívoro")) {
+						System.out.println("O seu animal é uma ÁGUIA");
+				} else if(aveCarnivoroOuOnivoro.equalsIgnoreCase("onívoro")) {
+					System.out.println("O seu animal é uma POMBA");
+				}
+			}
 		}
 	}
 }
