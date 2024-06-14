@@ -10,9 +10,9 @@ public class ExercicioDoisWhile {
 		Scanner leitura = new Scanner(System.in);
 
 		int idade;
-		int identidadeGenero, pessoaDev;
-		int countBackend = 0, countFrontend = 0, countFullstack = 0, countMobile = 0;
-		int countMulheres = 0, countHomens = 0, countNaoBinario = 0;
+		int identidadeGenero, pessoaDev, somaIdade = 0, total = 0;
+		int countBackend = 0, countFrontMulher = 0, countMobileHomem = 0, countFullstackBi = 0;
+		char pergunta;
 
 		while(true) {
 			System.out.println("Digite sua idade: ");
@@ -45,32 +45,38 @@ public class ExercicioDoisWhile {
 					Escolha uma opção:
 					""");
 			pessoaDev = leitura.nextInt();
-			
-			if((identidadeGenero == 1 || identidadeGenero == 4)) {
-				countMulheres++;
-			} else if(identidadeGenero == 2 || identidadeGenero == 5) {
-				countHomens++;
-			} else if(identidadeGenero == 3) {
-				countNaoBinario++;
-			}
-			
-			
+
+
 			if(pessoaDev == 1) {
 				countBackend++;
-			} else if(pessoaDev == 2) {
-				countFrontend++;
-			} else if(pessoaDev == 3) {
-				countMobile++;
+			} else if((identidadeGenero == 1 || identidadeGenero == 4) && pessoaDev == 2) {
+				countFrontMulher++;
+			} else if((identidadeGenero == 2 || identidadeGenero == 5) && pessoaDev == 3) {
+				countMobileHomem++;
 			} else if(pessoaDev == 4) {
-				countFullstack++;
-			} else {
-				System.out.println("Porfavor digite uma das opções acima!");
+				countMobileHomem++;
+			} else if(identidadeGenero == 3 && pessoaDev == 4 && idade < 30){
+				countFullstackBi++;
 			}
-			
 
+			total++;
+			somaIdade += idade;
+
+			System.out.println("Você deseja continuar a leitura de dados? (S/N)");
+			pergunta = leitura.next().charAt(0);
+			if(pergunta == 'N' || pergunta == 'n') {
+				break;
+			}
+
+
+			double mediaIdade = (double) somaIdade / total;
+
+			System.out.println("Número de Pessoas Desenvolvedoras Backend: " + countBackend);
+			System.out.println("Número de Mulheres Cis e Trans Desenvolvedoras Frontend: " + countFrontMulher);
+			System.out.println("Número de Homens Cis e Trans Desenvolvedoras Mobile maiores de 40 anos: " + countMobileHomem);
+			System.out.println("Número de Não Binários Desenvolvedores FullStack menores de 30 anos: " + countFullstackBi);
+			System.out.println("Número total de pessoas que responderam a pesquisa: " + total);
+			System.out.println("Média da idade das pessoas que responderam á pesquisa: " + mediaIdade);
 		}
-
-
 	}
-
 }
