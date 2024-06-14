@@ -14,16 +14,20 @@ public class ExercicioDoisListaUm {
 
 		Scanner leitura = new Scanner(System.in);
 
-		int pares,impares,numeros;
+		int numerosPares = 0, numerosImpares = 0, numeros;
 
 		for (int i = 0; i<10 ; i++) {
 			System.out.println("Digite um números:");
 			numeros = leitura.nextInt();
+			
+			if(numeros %2 == 0) {
+				numerosPares++;
+			} else {
+				numerosImpares++;
+			}
 		}
-		
-		if(numeros %2 == 0 && numeros %3 == 0) {
-			System.out.println("Total de números pares: " + numeros);
-		}
+		System.out.println("Total de números pares: " + numerosPares);
+		System.out.println("Total de números ímpares: " + numerosImpares);
 	}
 
 }
