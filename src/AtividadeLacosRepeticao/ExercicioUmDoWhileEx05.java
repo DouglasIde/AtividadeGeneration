@@ -2,7 +2,7 @@ package AtividadeLacosRepeticao;
 
 import java.util.Scanner;
 
-public class ExercicioUmDoWhile {
+public class ExercicioUmDoWhileEx05 {
 	public static void main(String[] args) {
 
 		/*
